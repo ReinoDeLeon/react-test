@@ -1,6 +1,7 @@
 import logo from './logo.svg';
+import work from './workInProgress.svg';
 import './App.css';
-import {useEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react';
 
 function App() {
   const mainRef = useRef(null);
@@ -15,8 +16,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={work} className="App-logo" alt="logo" />
         <h2 ref={mainRef}>No js enabled</h2>
+        <h4>Actualmente en desarrollo</h4>
         <a
           className="App-link"
           href="https://reactjs.org"
