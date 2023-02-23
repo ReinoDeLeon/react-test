@@ -1,31 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amara - Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="/scripts/motor.js"></script>
-</head>
 
+function Thor() {
+
+    return (
 <body class="bg-dark">
     <header class="col-sm-12 bottom-separator bg-dark">
         
         <div class="container">
             <div class="row py-3">
                 <div class="col-sm-12 col-md-4 text-center">
-                    <a href="index.html"><img class="img-fluid text-white" src="img/logo.jpg" alt=""></a>
+                    <a href="index.html"><img class="img-fluid text-white" src="img/logo.jpg" alt=""/></a>
                 </div>
                 <div class=" col-sm-12 col-md-8 text-end fs-5 align-self-center">
                     <nav class="navbar navbar-expand-lg navbar-light titulo ">
@@ -48,7 +32,7 @@
                                     <li class="nav-item ps-5">
                                         <a class="nav-link text-white" aria-current="page" href="#">Contacto</a>
                                     </li>
-
+                                </ul>
                             </div>
                         </div>
                     </nav>
@@ -94,7 +78,7 @@
                     </div>
                 </div>
                 <div class="row arnold align-items-center ps-5 col-12 mt-2 mt-md-0 col-md-6">
-                    <img class="col-12 align-self-center" src="img/arnold.png" alt="">
+                    <img class="col-12 align-self-center" src="img/arnold.png" alt=""/>
                 </div>
             </div>
         </div>
@@ -124,5 +108,7 @@
     </footer>
 
 </body>
+    )
+}
 
-</html>
+export default Thor;
