@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import work from './workInProgress.svg';
 import './App.css';
 import {useEffect, useRef} from 'react';
@@ -21,7 +20,7 @@ function App() {
         <h4>Actualmente en desarrollo</h4>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="/thor.html"
           target="_blank"
           rel="noopener noreferrer"
         >

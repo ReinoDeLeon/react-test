@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Titulo";
+    src: url(/fonts/White\ Storm.ttf);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-80px);} 
+    60% {transform: translateY(55px);} 
+    80% {transform: translateY(15px);} 
+ } 
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+nav {
+    font-size: xx-large;
+}
+p {
+    color: white;
+}
+
+.titulo {
+    font-family: "Titulo";
+}
+.text-main{
+    color: #ffffff;
+}
+a {
+    color: white;
+}
+.active {
+    border-bottom: solid #ffffff 5px;
+    border-radius: 5px;
+}
+.img-fluid {
+    max-width: 20%;
+}
+div.arnold>img {
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bottom-separator {
+    border-bottom: solid #ffffff;
+}
+.bottom-separator-main {
+    border-radius: 15px;
+}
+.background-general {
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-banner {
+    background-image: url(/img/footer-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer.container {
+    border-top: solid #ffffff 5px;
+    max-width: 100%;
+}
+
+@media (min-width: 992px) { 
+    .bounce {
+        position: relative;
+        -webkit-animation-name: bounce; 
+                animation-name: bounce; 
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s; 
+                -webkit-animation-fill-mode: both; 
+                animation-fill-mode: both; 
+    }
+ }
+
+#quote{
+    height: 700px;
+}
+
+#quote p {
+    font-size: xx-large;
+}
+#quote>div {
+    height: 350px;
+    line-height: normal;
+}
+
+/*  Cambio botones bootstrap  */
+.btn {
+    color: white;
+}
+.btn:hover {
+    color: white;
+}
+.btn-info {
+    background-color: #57676F;
+    border-color: #57676F;
+}
+.btn-info:hover {
+    background-color: #939da1c5;
+    border-color: #939da1c5;
+}
