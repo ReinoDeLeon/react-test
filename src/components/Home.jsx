@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect} from "react";
 import "../App.css";
 // importing Link from react-router-dom to navigate to 
 // different end points.
@@ -7,7 +7,9 @@ import style from "../static/css/style.css"
 
 const Home = () => {
     const autor = "Iván Antón";
-
+    useEffect(() => {
+        document.title = autor + ' | Home';
+        }, []);
 
     return (
         <div className="App">
