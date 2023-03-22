@@ -2,22 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import {
-  BrowserRouter as 
   BrowserRouter,
   Route,
+  Redirect,
+  Switch
 } from "react-router-dom";
 import Home from './components/Home';
 import Thor from './components/Thor';
+import NotFoundScreen from './components/errores/404';
+import ThorContacto from './components/ThorContacto';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <div>
-        <Route exact path="/" component={Home} />
-        <Route path="/thor" component={Thor} />
-    </div>
-  </BrowserRouter>
+  <Switch>
+    <Route path="/home" component={Home} />
+    <Route exact path="/thor" component={Thor} />
+    <Route path="/thor/contacto" component={ThorContacto} />
+    <Route exact path="/"> <Redirect to="/home" /></Route> 
+    <Route component={NotFoundScreen}/>
+  </Switch>
+</BrowserRouter>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
